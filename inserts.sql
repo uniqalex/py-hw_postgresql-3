@@ -39,6 +39,25 @@ union all select 'Албом6', 2020
 union all select 'Албом7', 2021
 union all select 'Албом8', 2022;
 
+insert into albums (album_id, author_id)
+		  select 1, 8
+union all select 2, 8
+union all select 3, 8
+union all select 4, 1
+union all select 4, 2
+union all select 4, 4
+union all select 5, 5
+union all select 5, 6
+union all select 5, 7
+union all select 5, 6
+union all select 5, 6
+union all select 6, 4
+union all select 6, 5
+union all select 6, 8
+union all select 6, 7;
+
+
+
 insert into song (name, duration, genre_id, album_id)
 		  select 'Дзанг Янг мой лучший друг', 180, 1, 1
 union all select 'Flamingo данс', 190, 2, 2
