@@ -17,6 +17,18 @@ union all select 'Транс'
 union all select 'Электро'
 union all select 'Drum';
 
+insert into genres (genre_id, author_id)
+		  select 1, 6
+union all select 2, 5
+union all select 3, 4
+union all select 4, 3
+union all select 1, 2
+union all select 1, 3
+union all select 6, 6
+union all select 2, 5
+union all select 3, 8;
+
+
 insert into album (name, year_public)
 		  select 'Албом1', 2015
 union all select 'Албом2', 2016
