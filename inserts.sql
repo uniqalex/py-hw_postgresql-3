@@ -57,7 +57,6 @@ union all select 6, 8
 union all select 6, 7;
 
 
-
 insert into song (name, duration, genre_id, album_id)
 		  select 'Дзанг Янг мой лучший друг', 180, 1, 1
 union all select 'Flamingo данс', 190, 2, 2
